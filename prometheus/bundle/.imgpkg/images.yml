@@ -2,40 +2,19 @@
 apiVersion: imgpkg.carvel.dev/v1alpha1
 images:
 - annotations:
-    kbld.carvel.dev/id: bats/bats:v1.4.1
+    kbld.carvel.dev/id: jimmidyson/configmap-reload:v0.5.0
     kbld.carvel.dev/origins: |
       - resolved:
-          tag: v1.4.1
-          url: bats/bats:v1.4.1
-  image: index.docker.io/bats/bats@sha256:f9e5272f8ccd9a21554e461c596b08553d052af78e509b8dffbd80ba89a34164
+          tag: v0.5.0
+          url: jimmidyson/configmap-reload:v0.5.0
+  image: index.docker.io/jimmidyson/configmap-reload@sha256:904d08e9f701d3d8178cb61651dbe8edc5d08dd5895b56bdcac9e5805ea82b52
 - annotations:
-    kbld.carvel.dev/id: grafana/grafana:9.2.3
+    kbld.carvel.dev/id: prom/pushgateway:v1.4.3
     kbld.carvel.dev/origins: |
       - resolved:
-          tag: 9.2.3
-          url: grafana/grafana:9.2.3
-  image: index.docker.io/grafana/grafana@sha256:129d050943ae2d9c473191c0b573a2e53facce6f7808c5d48f1a66d424c4e81b
-- annotations:
-    kbld.carvel.dev/id: k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.3.0
-    kbld.carvel.dev/origins: |
-      - resolved:
-          tag: v1.3.0
-          url: k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.3.0
-  image: k8s.gcr.io/ingress-nginx/kube-webhook-certgen@sha256:549e71a6ca248c5abd51cdb73dbc3083df62cf92ed5e6147c780e30f7e007a47
-- annotations:
-    kbld.carvel.dev/id: quay.io/kiwigrid/k8s-sidecar:1.19.2
-    kbld.carvel.dev/origins: |
-      - resolved:
-          tag: 1.19.2
-          url: quay.io/kiwigrid/k8s-sidecar:1.19.2
-  image: quay.io/kiwigrid/k8s-sidecar@sha256:6a8671702d6f8651c11bee1cd9a24d3dde6a5a05e0972d91c35009c38b527616
-- annotations:
-    kbld.carvel.dev/id: quay.io/prometheus-operator/prometheus-operator:v0.60.1
-    kbld.carvel.dev/origins: |
-      - resolved:
-          tag: v0.60.1
-          url: quay.io/prometheus-operator/prometheus-operator:v0.60.1
-  image: quay.io/prometheus-operator/prometheus-operator@sha256:63d4d0f8fb817313ec13c2960b72d1b4341bea269eb97ec7bf44c585a04b1e2e
+          tag: v1.4.3
+          url: prom/pushgateway:v1.4.3
+  image: index.docker.io/prom/pushgateway@sha256:3496e0f859434b60e6e6eccbc1dddf33adad9a9eb19592dc4ed4a4bf167a844d
 - annotations:
     kbld.carvel.dev/id: quay.io/prometheus/alertmanager:v0.24.0
     kbld.carvel.dev/origins: |
