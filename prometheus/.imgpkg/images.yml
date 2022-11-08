@@ -1,0 +1,67 @@
+---
+apiVersion: imgpkg.carvel.dev/v1alpha1
+images:
+- annotations:
+    kbld.carvel.dev/id: bats/bats:v1.4.1
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v1.4.1
+          url: bats/bats:v1.4.1
+  image: index.docker.io/bats/bats@sha256:f9e5272f8ccd9a21554e461c596b08553d052af78e509b8dffbd80ba89a34164
+- annotations:
+    kbld.carvel.dev/id: grafana/grafana:9.2.3
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: 9.2.3
+          url: grafana/grafana:9.2.3
+  image: index.docker.io/grafana/grafana@sha256:129d050943ae2d9c473191c0b573a2e53facce6f7808c5d48f1a66d424c4e81b
+- annotations:
+    kbld.carvel.dev/id: k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.3.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v1.3.0
+          url: k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.3.0
+  image: k8s.gcr.io/ingress-nginx/kube-webhook-certgen@sha256:549e71a6ca248c5abd51cdb73dbc3083df62cf92ed5e6147c780e30f7e007a47
+- annotations:
+    kbld.carvel.dev/id: quay.io/kiwigrid/k8s-sidecar:1.19.2
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: 1.19.2
+          url: quay.io/kiwigrid/k8s-sidecar:1.19.2
+  image: quay.io/kiwigrid/k8s-sidecar@sha256:6a8671702d6f8651c11bee1cd9a24d3dde6a5a05e0972d91c35009c38b527616
+- annotations:
+    kbld.carvel.dev/id: quay.io/prometheus-operator/prometheus-operator:v0.60.1
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v0.60.1
+          url: quay.io/prometheus-operator/prometheus-operator:v0.60.1
+  image: quay.io/prometheus-operator/prometheus-operator@sha256:63d4d0f8fb817313ec13c2960b72d1b4341bea269eb97ec7bf44c585a04b1e2e
+- annotations:
+    kbld.carvel.dev/id: quay.io/prometheus/alertmanager:v0.24.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v0.24.0
+          url: quay.io/prometheus/alertmanager:v0.24.0
+  image: quay.io/prometheus/alertmanager@sha256:088464f949de8065b9da7dfce7302a633d700e9d598e2bebc03310712f083b31
+- annotations:
+    kbld.carvel.dev/id: quay.io/prometheus/node-exporter:v1.3.1
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v1.3.1
+          url: quay.io/prometheus/node-exporter:v1.3.1
+  image: quay.io/prometheus/node-exporter@sha256:f2269e73124dd0f60a7d19a2ce1264d33d08a985aed0ee6b0b89d0be470592cd
+- annotations:
+    kbld.carvel.dev/id: quay.io/prometheus/prometheus:v2.39.1
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v2.39.1
+          url: quay.io/prometheus/prometheus:v2.39.1
+  image: quay.io/prometheus/prometheus@sha256:4748e26f9369ee7270a7cd3fb9385c1adb441c05792ce2bce2f6dd622fd91d38
+- annotations:
+    kbld.carvel.dev/id: registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.6.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v2.6.0
+          url: registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.6.0
+  image: registry.k8s.io/kube-state-metrics/kube-state-metrics@sha256:bdab4e49d71d272cf944c8612dff5ab1250f0fafdae45c22980286ac0c016032
+kind: ImagesLock

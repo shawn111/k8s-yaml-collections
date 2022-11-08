@@ -1,0 +1,9 @@
+apiVersion: imgpkg.carvel.dev/v1alpha1
+kind: Bundle
+metadata:
+  name: basic
+authors:
+- name: Shawn Wang
+  email: shawn.wang@easystack.cn
+websites:
+- url: easystack.cn
